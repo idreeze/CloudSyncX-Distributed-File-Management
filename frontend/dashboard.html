@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSyncX Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h1>☁️ CloudSyncX</h1>
+</div>
+
+<div class="container">
+
+    <div class="upload-card">
+        <h2>Upload File</h2>
+
+        <input type="file" id="fileInput">
+
+        <button onclick="uploadFile()">
+            Upload File
+        </button>
+    </div>
+
+    <div class="files-card">
+        <h2>Files</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>File Name</th>
+                <th>Version</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+
+            <tbody id="fileTable">
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
